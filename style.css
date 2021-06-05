@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62, 5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(173, 171, 171);
+  font-family: "Roboto", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background: url(./images/lacoste\ shop.jpg);
+  background-position-y: -7rem;
+  background-position-x: -15rem;
+}
+
+header h1 {
+  padding: 2rem;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: lightgray;
+}
+
+nav {
+  padding: 2.5rem;
+}
+nav ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav li a {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: rgb(32, 32, 32);
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.nav-cart {
+  color: #ffffff;
+}
+
+.wrap {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+.first-5,
+.second-5 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.card {
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  width: 13rem;
+  height: 23rem;
+  margin: auto;
+  text-align: center;
+  background-color: lightgrey;
+}
+
+.card img {
+  width: 10rem;
+  height: 10rem;
+}
+.card h2 {
+  margin-top: 0.5rem;
+}
+
+.card p {
+  margin: 1.5rem auto;
+}
+.price {
+  color: grey;
+  font-size: 1.8rem;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 0.8rem;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card img:hover {
+  transform: scale(2);
+}
+footer {
+  clear: both;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ABOUT PAGE */
+
+.about {
+  margin-top: 10rem;
+}
+.about h1 {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.about-p {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* CART PAGE */
+
+.products-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.product-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightslategray;
+  margin: 0 auto;
+}
+
+.product-tittle {
+  width: 45%;
+}
+
+.price-cart {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightslategray;
+}
+
+.quantity {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightslategray;
+}
+
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightslategray;
+}
+.product {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid lightslategray;
+}
+
+.product ion-icon {
+  cursor: pointer;
+}
+
+.trash {
+  width: 3rem;
+}
+
+.products-cart {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid lightslategray;
+}
+.product img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.basketTotalTittle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+
+.walletTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1rem 0;
+}
+.walletTotalTittle {
+  width: 30%;
+}
+.walletTotal {
+  width: 10%;
+}
+
+/* MEDIA RESPONSIVE */
+/*font-size: 62,5%; 1 rem = 10px tab landscape 
+  font-size: 56, 25%; 1 rem = 9px tab portrait 
+  font-size:50 %; 1 rem = 8px  tab landscape 
+  font-size: 75%; 1 rem = 12px big desktop 
+  */
+/*BIG DESKTOP*/
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 75%;
+  }
+  header h1 {
+    font-size: 6rem;
+  }
+  nav {
+    margin-top: 2rem;
+  }
+  nav li a {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  .card {
+    margin-top: 5rem;
+    width: 25rem;
+    height: 40rem;
+  }
+  .card img {
+    width: 25rem;
+    height: 20rem;
+  }
+
+  .card h2 {
+    font-size: 3.5rem;
+  }
+
+  .card p {
+    font-size: 2.5rem;
+  }
+
+  .price {
+    font-size: 3rem;
+  }
+
+  .card button {
+    height: 5rem;
+  }
+
+  .products-container {
+    margin-top: 20rem;
+    font-size: 3rem;
+  }
+  .products-container h4 {
+    font-size: 3rem;
+  }
+  .about h1 {
+    font-size: 4rem;
+    margin-top: 15rem;
+  }
+
+  .about p {
+    font-size: 3rem;
+  }
+  .about-footer,
+  .cart-footer,
+  .index-footer {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56, 25%;
+  }
+
+  .card {
+    width: 9rem;
+    height: 20rem;
+  }
+  .card img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    background-position-y: -13rem;
+    background-position-x: 5rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+  nav li a {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 12rem;
+    height: 18rem;
+  }
+  .card img {
+    width: 12rem;
+    height: 8rem;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .products-container {
+    font-size: 2rem;
+  }
+  .products-container h4 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+
+  header {
+    background-position-y: -25rem;
+    background-position-x: -40rem;
+  }
+
+  .first-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .second-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    height: fit-content;
+  }
+  .card img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 30%;
+  }
+
+  .products-container {
+    font-size: 1rem;
+  }
+}

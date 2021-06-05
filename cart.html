@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <header class="sticky">
+      <h1>Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="cart">
+            <ion-icon name="cart-outline" class="nav-cart"></ion-icon
+            ><a href="cart.html">Cart <span>0</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="products-container">
+      <div class="product-header">
+        <h5 class="product-tittle">Products</h5>
+        <h5 class="price-cart">Price</h5>
+        <h5 class="quantity">Quantity</h5>
+        <h5 class="total">Total</h5>
+      </div>
+      <div class="products-cart"></div>
+    </div>
+    <footer class="cart-footer">Copyright 2021</footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
